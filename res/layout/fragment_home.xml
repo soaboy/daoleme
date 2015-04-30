@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#DCEEFF">
+
+    <ImageView
+            android:id="@+id/home_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/meeting" />
+    <TextView
+            android:id="@+id/home_currentmeeting_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/black"
+            android:text="@string/currentmeeting"
+            android:textSize="14sp" />
+    <TextView
+            android:id="@+id/meeting_currentmeeting_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="30dp"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:text="2015年2月27日"
+            android:textSize="14sp" />
+    <TextView
+            android:id="@+id/home_currentmeeting_timer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/text_shape_bg"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="距离会议开始还有:1小时34分23秒"
+            android:textSize="16sp" />
+
+    <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_shape_bg"
+            android:text="我要签到" />
+
+</LinearLayout>

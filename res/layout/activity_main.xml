@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        >
+    <LinearLayout
+            android:id="@+id/main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="#5286BF"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+        <RelativeLayout
+                android:id="@+id/main_tab_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                >
+            <TextView 
+                    android:id="@+id/main_tab_home_text"
+                    style="@style/main_tab_txt_style"
+                    android:text="首页"
+                    />
+            <ImageView
+                    android:id="@+id/main_tab_home_image"
+                    style="@style/main_tab_img_style"
+                    android:layout_above="@+id/main_tab_home_text"
+                    android:src="@drawable/ic_launcher"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/main_tab_meeting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                >
+            <TextView
+                    android:id="@+id/main_tab_meeting_text"
+                    style="@style/main_tab_txt_style"
+                    android:text="会议"
+                    />
+            <ImageView
+                    android:id="@+id/main_tab_meeting_image"
+                    style="@style/main_tab_img_style"
+                    android:layout_above="@+id/main_tab_meeting_text"
+                    android:src="@drawable/ic_launcher"
+                    />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/main_tab_weather"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                >
+            <TextView
+                    android:id="@+id/main_tab_weather_text"
+                    style="@style/main_tab_txt_style"
+                    android:text="天气"
+                    />
+            <ImageView
+                    android:id="@+id/main_tab_weather_image"
+                    style="@style/main_tab_img_style"
+                    android:layout_above="@+id/main_tab_weather_text"
+                    android:src="@drawable/ic_launcher"
+                    />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- 分割线 -->
+
+    <View
+            android:id="@+id/main_tab_topline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/main_tab"
+            android:background="#DADADA" />
+
+    <!-- 内容 -->
+
+    <FrameLayout
+            android:id="@+id/main_content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/main_tab_topline"
+            android:background="@color/white"
+            android:layout_alignParentTop="true" >
+    </FrameLayout>
+</RelativeLayout>
+
